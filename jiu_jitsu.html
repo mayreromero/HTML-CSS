@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jiu Jitsu</title>
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/animate.css/animate.css-master/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://kit.fontawesome.com/ce5f80656d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header>
+      <div class="container-barra">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-brand"><img src="./images/logo.jpg" alt=""><a>KOMPLEX</a></div>
+
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                  data-toggle="dropdown">ACTIVIDADES</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="aerobic.html">AEROBIC</a>
+                  <a class="dropdown-item" href="crossfit.html">CROSSFIT</a>
+                  <a class="dropdown-item" href="jiu_jitsu.html">JIU JITSU</a>
+                  <a class="dropdown-item" href="king_boxing.html">KING BOXING</a>
+                  <a class="dropdown-item" href="zumba.html">ZUMBA</a>
+                  <a class="dropdown-item" href="spinning.html">SPINNING</a>
+                </div>
+              </li>
+
+              <li class="nav-item active">
+                <a class="nav-link" href="planes.html">PLANES</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ml-md-auto">
+              <!--Modal login-->
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modal-login">
+                Ingresar
+              </button>
+              <!--Modal registro-->
+              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal-registro">
+                Registrar
+              </button>
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <!-- Modal de Login -->
+        <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Bienvenido a tu cuenta</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+              <div class="modal-body">
+                <form>
+                  <div class="form-group row">
+                    <label class="col-4 col-form-label" for="nombreusuario">Nombre de usuario</label>
+                    <div class="col-8">
+                      <input id="nombreusuario" name="nombreusuario" type="text" required="required"
+                        class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="pass" class="col-4 col-form-label">Contraseña</label>
+                    <div class="col-8">
+                      <input id="pass" name="pass" type="password" required="required" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="offset-4 col-8">
+                      <button name="submit" type="submit" class="btn btn-dark">Ingresar</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal de registro -->
+        <div class="modal fade" id="modal-registro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cliente Nuevo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group row">
+                    <label for="nombre" class="col-4 col-form-label">Nombre</label>
+                    <div class="col-8">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <i class="fa fa-address-card"></i>
+                          </div>
+                        </div>
+                        <input id="nombre" name="nombre" type="text" required="required" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="apellido" class="col-4 col-form-label">Apellido</label>
+                    <div class="col-8">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <i class="fa fa-address-card"></i>
+                          </div>
+                        </div>
+                        <input id="apellido" name="apellido" type="text" required="required" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="email" class="col-4 col-form-label">Email</label>
+                    <div class="col-8">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <i class="fa fa-envelope"></i>
+                          </div>
+                        </div>
+                        <input id="email" name="email" type="email" required="required" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="telefono" class="col-4 col-form-label">Telefono</label>
+                    <div class="col-8">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <i class="fa fa-phone"></i>
+                          </div>
+                        </div>
+                        <input id="telefono" name="telefono" type="number" class="form-control" required="required">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="col-4 col-form-label" for="nombreusuario">Nombre de usuario</label>
+                    <div class="col-8">
+                      <input id="nombreusuario" name="nombreusuario" type="text" required="required"
+                        class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="pass" class="col-4 col-form-label">Contraseña</label>
+                    <div class="col-8">
+                      <input id="pass" name="pass" type="password" required="required" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="repetir" class="col-4 col-form-label">Repetir contraseña</label>
+                    <div class="col-8">
+                      <input id="repetir" name="repetir" type="password" class="form-control" required="required">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="offset-4 col-8">
+                      <button name="submit" type="submit" class="btn btn-dark">Registrar</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="container-descrip">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="actividad-jiu animated bounceIn">Clases de Jiu Jitsu</h2>
+            <div class="row">
+
+              <div class="col-md-6">
+                <aside id="izq">
+                  <img src="./images/jiuu2.jpg" alt="Jiu Jitsu">
+                  <div class="parrafo">
+                    <p>Esta actividad te permitira mejora tu condición física,permite aumentar tu fuerza con los
+                      movimientos
+                      del deporte,generar autoconfianza, defensa personal, paciencia y disciplina.Es un deporte muy
+                      recomendable para que lo pongan en práctica personas de todas las edades. Además de todo lo dicho,
+                      favorece la agilidad mental</p>
+                  </div>
+                </aside>
+              </div>
+              <div class="col-md-6">
+                <aside id="der">
+                  <table class="table">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">Lunes</th>
+                        <th scope="col">Viernes</th>
+                        <th scope="col">Sabado</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="table-hora">
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">09:00 a 10:00</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </tbody>
+                    <tbody class="table-hora">
+                      <tr>
+                        <th scope="col">11:00 a 12:00</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                      </tr>
+                    </tbody>
+                    <tbody class="table-hora">
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col">13:00 a 14:00</th>
+                      </tr>
+                    </tbody>
+                    <tbody class="table-hora">
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col">14:00 a 15:00</th>
+                      </tr>
+                    </tbody>
+                    <tbody class="table-hora">
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col">15:00 a 16:00</th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="./vendor/jquery.min.js"></script>
+  <script src="./vendor/bootstrap.min.js"></script>
+  <script src="./vendor/scripts.js"></script>
+
+</body>
+
+</html>

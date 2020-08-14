@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes de Inscripcion</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animate.css/animate.css-master/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/ce5f80656d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid">
+      <header>
+        <div class="container-barra">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="navbar-toggler-icon"></span>
+            </button><div class="navbar-brand"><img src="./images/logo.jpg" alt=""><a>KOMPLEX</a></div>
+                      
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">INICIO</a>
+                </li>
+                <li class="nav-item active dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">ACTIVIDADES</a>
+  
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="aerobic.html">AEROBIC</a> 
+                          <a class="dropdown-item" href="crossfit.html">CROSSFIT</a> 
+                          <a class="dropdown-item" href="jiu_jitsu.html">JIU JITSU</a>
+                          <a class="dropdown-item" href="king_boxing.html">KING BOXING</a> 
+                          <a class="dropdown-item" href="zumba.html">ZUMBA</a> 
+                          <a class="dropdown-item" href="spinning.html">SPINNING</a>
+                      </div>
+                  </li>
+
+                  <li class="nav-item active">
+                      <a class="nav-link" href="planes.html">PLANES</a>
+                  </li>       
+              </ul> 
+              
+              <ul class="navbar-nav ml-md-auto">
+                <!--Modal login-->
+                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modal-login">
+                  Ingresar
+                </button>
+                <!--Modal registro-->
+                <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal-registro">
+                  Registrar
+                </button>
+                  
+              </ul> 
+            </div>
+          </nav>       
+        </div>
+      </header>
+
+        <main>
+          <section>
+            <!-- Modal de Login -->
+            <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Bienvenido a tu cuenta</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group row">
+                        <label class="col-4 col-form-label" for="nombreusuario">Nombre de usuario</label> 
+                        <div class="col-8">
+                          <input id="nombreusuario" name="nombreusuario" type="text" required="required" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="pass" class="col-4 col-form-label">Contraseña</label> 
+                        <div class="col-8">
+                          <input id="pass" name="pass" type="password" required="required" class="form-control">
+                        </div>
+                      </div> 
+                      <div class="form-group row">
+                        <div class="offset-4 col-8">
+                          <button name="submit" type="submit" class="btn btn-dark">Ingresar</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+              <!-- Modal de registro -->
+            <div class="modal fade" id="modal-registro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cliente Nuevo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group row">
+                        <label for="nombre" class="col-4 col-form-label">Nombre</label> 
+                        <div class="col-8">
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">
+                                <i class="fa fa-address-card"></i>
+                              </div>
+                            </div> 
+                            <input id="nombre" name="nombre" type="text" required="required" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="form-group row">
+                        <label for="apellido" class="col-4 col-form-label">Apellido</label> 
+                        <div class="col-8">
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">
+                                <i class="fa fa-address-card"></i>
+                              </div>
+                            </div> 
+                            <input id="apellido" name="apellido" type="text" required="required" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="form-group row">
+                        <label for="email" class="col-4 col-form-label">Email</label> 
+                        <div class="col-8">
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">
+                                <i class="fa fa-envelope"></i>
+                              </div>
+                            </div> 
+                            <input id="email" name="email" type="email" required="required" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="form-group row">
+                        <label for="telefono" class="col-4 col-form-label">Telefono</label> 
+                        <div class="col-8">
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">
+                                <i class="fa fa-phone"></i>
+                              </div>
+                            </div> 
+                            <input id="telefono" name="telefono" type="number" class="form-control" required="required">
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="form-group row">
+                        <label class="col-4 col-form-label" for="nombreusuario">Nombre de usuario</label> 
+                        <div class="col-8">
+                          <input id="nombreusuario" name="nombreusuario" type="text" required="required" class="form-control">
+                        </div>
+                      </div>
+        
+                      <div class="form-group row">
+                        <label for="pass" class="col-4 col-form-label">Contraseña</label> 
+                        <div class="col-8">
+                          <input id="pass" name="pass" type="password" required="required" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="repetir" class="col-4 col-form-label">Repetir contraseña</label> 
+                        <div class="col-8">
+                          <input id="repetir" name="repetir" type="password" class="form-control" required="required">
+                        </div>
+                      </div> 
+                      <div class="form-group row">
+                        <div class="offset-4 col-8" >
+                          <button name="submit" type="submit" class="btn btn-dark">Registrar</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </section>
+
+          <section>
+            <div class="contenedor-inscrip ">
+              <h3>Planes de Inscripcion</h3>
+              <div class="contenedor-planes">
+                <div class="plan semanal animated bounceIn">
+                    <h4>Komplex Semanal</h4>
+                    <h4>$ 1000</h4>
+                    <hr>
+                    <h5>Incluye:</h5>
+                    <h6><i class="fas fa-check"></i>  Zona cardio</h6>
+                    <h6><i class="fas fa-check"></i>  Musculacion</h6>
+                    <h6><i class="fas fa-check"></i>  Salon de Spa</h6>
+                    <h6><i class="fas fa-check"></i>  Control Medico</h6>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <h5>Inscribete en Komplex:</h5>  
+                    <h5><i class="fas fa-map-marker-alt"></i>Av Independencia 2800</h5>  
+                </div>
+                <div class="plan mensual animated bounceIn">
+                    <h4>Komplex Mensual</h4>
+                    <h4> $ 4000</h4>
+                    <hr>
+                    <h5>Incluye:</h5>
+                    <h6><i class="fas fa-check"></i>  Zona cardio</h6>
+                    <h6><i class="fas fa-check"></i>  Musculacion</h6>
+                    <h6><i class="fas fa-check"></i>  Salon de Spa</h6>
+                    <h6><i class="fas fa-check"></i>  Control Medico</h6>
+                    <h6><i class="fas fa-check"></i>  Asignacion de Rutina</h6>
+                    <h6><i class="fas fa-check"></i>  Zona de Cama de Masajes</h6>
+                    <h6><i class="fas fa-check"></i>  Un invitado Gratis por una semana</h6>
+                    <br> 
+                    <hr>
+                    <h5>Inscribete en Komplex:</h5>  
+                    <h5><i class="fas fa-map-marker-alt"></i>Av Independencia 2800</h5>
+                </div>
+                <div class="plan anual animated bounceIn">
+                    <h4>Komplex Anual</h4>
+                    <h4>$ 45000</h4>
+                    <hr>
+                    <h5>Incluye:</h5>
+                    <h6><i class="fas fa-check"></i>  Zona Cardio</h6>
+                    <h6><i class="fas fa-check"></i>  Musculacion</h6>
+                    <h6><i class="fas fa-check"></i>  Salon de Spa</h6>
+                    <h6><i class="fas fa-check"></i>  Control Medico</h6>
+                    <h6><i class="fas fa-check"></i>  Asignacion de Rutina</h6>
+                    <h6><i class="fas fa-check"></i>  Zona de Cama de Masajes</h6>
+                    <h6><i class="fas fa-check"></i>  Te Regalamos un mes gratis para un invitado</h6>
+                    <h6><i class="fas fa-check"></i>  Zona cardio</h6>  
+                    <hr>
+                    <h5>Inscribete en Komplex:</h5>  
+                    <h5><i class="fas fa-map-marker-alt"></i>Av Independencia 2800</h5>
+                </div>
+              </div>     
+            </div>
+          </section>
+
+            
+        </main>
+
+        <footer>
+          <div class="row">
+            <div class="col-md-12">
+              <div id="contenedorredes">
+                <div class="redes">
+                  <a href="#"><img src="./images/Facebook.png" alt="imagen de facebook"></a>
+                  <a href="#"><img src="./images/Twitter.png" alt="imagen de twitter"></a>
+                  <a href="#"><img src="./images/Instag.png" alt="imagen de instagram"></a>
+                </div>
+                <div id="contactoinfo">
+                  <div class="mail"><img src="./images/icono-mail.png" >Komplexgym@gmail.com</div>
+                  <div class="whatsapp"><img src="./images/whatsapp.png">1167496732</div>
+                </div>
+                <div class="salida">
+                  <h5><i class="fas fa-map-marker-alt"></i>  Av Indepencia 2900</h5>
+                  <h5>©2015 -2020 KOMPLEX. Todos los derechos reservados.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+    </div>
+
+
+
+  <script src="./vendor/jquery.min.js"></script>
+  <script src="./vendor/bootstrap.min.js"></script>
+  <script src="./vendor/scripts.js"></script>
+    
+</body>
+</html>
